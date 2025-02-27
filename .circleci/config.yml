@@ -46,4 +46,4 @@ jobs:
     steps:
       - run:
           name: deploy-application
-          command: ssh -o StrictHostKeyChecking=no $EC2_Connect@$EC2_Public_DNS "rm -rf circleci_example/;git clone https://github.com/DevOps-O/circleci_example.git; source .cicleci/deploy.sh"
+          command: ssh -o StrictHostKeyChecking=no $EC2_Connect@$EC2_Public_DNS "rm -rf circleci_example/;git clone https://github.com/DevOps-O/circleci_example.git; source ExampleApplication/deploy.sh"
